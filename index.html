@@ -25,6 +25,7 @@
       <div class="nav-links">
         <a href="#about">About</a>
         <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
         <a href="#impact">Impact</a>
         <a href="#skills">Skills</a>
         <a href="#contact" class="nav-cta">Get in touch</a>
@@ -151,9 +152,95 @@
       </div>
     </section>
 
+    <section id="projects" class="section">
+      <div class="section-head">
+        <span class="section-kicker">03 — Projects</span>
+        <h2>I build the AI engineering, not just the roadmap.</h2>
+      </div>
+      <p class="projects-intro">
+        I ship product decisions about multi-agent systems, evals, and LLM safety — so I build them too. These are real, open-source AI-engineering projects: each one carries its own tests, CI, and a reproducible benchmark, and the first two run <strong>live in your browser</strong> (real Python via Pyodide — no install, no keys).
+      </p>
+      <div class="projects-grid">
+        <article class="project">
+          <div class="project-top">
+            <h3>winnow</h3>
+            <span class="project-stack">Python · BM25 · MMR</span>
+          </div>
+          <p>Budget-aware context compression for RAG &amp; agents — packs the highest-signal context into a token budget with BM25 relevance and MMR diversity. Deterministic, zero-dependency.</p>
+          <div class="project-links">
+            <a class="proj-live" href="https://hritikd.github.io/winnow/" target="_blank" rel="noreferrer">▶ Live demo</a>
+            <a href="https://github.com/Hritikd/winnow" target="_blank" rel="noreferrer">Code ↗</a>
+          </div>
+        </article>
+        <article class="project">
+          <div class="project-top">
+            <h3>warren</h3>
+            <span class="project-stack">Python · NumPy · HNSW</span>
+          </div>
+          <p>A from-scratch HNSW approximate-nearest-neighbor index — the algorithm behind vector databases. Recall@10 of 0.99+ while scanning ~5% of the data, measured against exact search.</p>
+          <div class="project-links">
+            <a class="proj-live" href="https://hritikd.github.io/warren/" target="_blank" rel="noreferrer">▶ Live demo</a>
+            <a href="https://github.com/Hritikd/warren" target="_blank" rel="noreferrer">Code ↗</a>
+          </div>
+        </article>
+        <article class="project">
+          <div class="project-top">
+            <h3>verdict</h3>
+            <span class="project-stack">Python · CI</span>
+          </div>
+          <p>Adversarial LLM red-teaming platform — runs PAIR, Crescendo, and injection attacks against any model, then reports attack-success-rate metrics with per-category breakdowns.</p>
+          <div class="project-links">
+            <a href="https://github.com/Hritikd/verdict" target="_blank" rel="noreferrer">Code ↗</a>
+          </div>
+        </article>
+        <article class="project">
+          <div class="project-top">
+            <h3>hermes</h3>
+            <span class="project-stack">Python · CI</span>
+          </div>
+          <p>Test-time compute scaling engine — gives any LLM o1-style reasoning search via Process Reward Models, MCTS, and beam search.</p>
+          <div class="project-links">
+            <a href="https://github.com/Hritikd/hermes" target="_blank" rel="noreferrer">Code ↗</a>
+          </div>
+        </article>
+        <article class="project">
+          <div class="project-top">
+            <h3>gemma4-multi-agent</h3>
+            <span class="project-stack">LangGraph · Gemini</span>
+          </div>
+          <p>Multi-agent system — a Supervisor routes work across 4 specialist agents with live reasoning traces and sandboxed tool execution.</p>
+          <div class="project-links">
+            <a href="https://github.com/Hritikd/gemma4-multi-agent" target="_blank" rel="noreferrer">Code ↗</a>
+          </div>
+        </article>
+        <article class="project">
+          <div class="project-top">
+            <h3>agent-evals-lab</h3>
+            <span class="project-stack">TypeScript · React</span>
+          </div>
+          <p>Evaluation workbench for agent reliability — typed scoring engine, policy rules, regression detection, and a trace-inspection dashboard.</p>
+          <div class="project-links">
+            <a class="proj-live" href="https://hritikd.github.io/agent-evals-lab/" target="_blank" rel="noreferrer">▶ Live demo</a>
+            <a href="https://github.com/Hritikd/agent-evals-lab" target="_blank" rel="noreferrer">Code ↗</a>
+          </div>
+        </article>
+        <article class="project">
+          <div class="project-top">
+            <h3>rag-safety-gateway</h3>
+            <span class="project-stack">TypeScript · React</span>
+          </div>
+          <p>AI security gateway that scans RAG context for prompt injection, secrets, PII, and exfiltration risk — producing deterministic allow / redact / quarantine decisions.</p>
+          <div class="project-links">
+            <a class="proj-live" href="https://hritikd.github.io/rag-safety-gateway/" target="_blank" rel="noreferrer">▶ Live demo</a>
+            <a href="https://github.com/Hritikd/rag-safety-gateway" target="_blank" rel="noreferrer">Code ↗</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
     <section id="impact" class="section">
       <div class="section-head">
-        <span class="section-kicker">03 — Selected impact</span>
+        <span class="section-kicker">04 — Selected impact</span>
         <h2>Numbers I've moved.</h2>
       </div>
       <div class="metrics">
@@ -186,7 +273,7 @@
 
     <section id="skills" class="section">
       <div class="section-head">
-        <span class="section-kicker">04 — Toolkit</span>
+        <span class="section-kicker">05 — Toolkit</span>
         <h2>What I bring to a product team.</h2>
       </div>
       <div class="skills-grid">
@@ -236,7 +323,7 @@
 
     <section class="section">
       <div class="section-head">
-        <span class="section-kicker">05 — Background</span>
+        <span class="section-kicker">06 — Background</span>
         <h2>Education &amp; fellowships.</h2>
       </div>
       <div class="bg-grid-cards">
@@ -255,7 +342,7 @@
 
     <section id="contact" class="section contact">
       <div class="contact-inner">
-        <span class="section-kicker">06 — Get in touch</span>
+        <span class="section-kicker">07 — Get in touch</span>
         <h2>Let's build something people pay for.</h2>
         <p>If you're a founder, hiring manager, or operator at a venture-backed AI startup — I'd love to talk product, pricing, or GTM. Fastest way to reach me is email.</p>
         <div class="contact-actions">
