@@ -1,31 +1,13 @@
-/* ————————————————————————————————————————————————
-   Hritik Datta — personal site
-   Editorial, typography-first. Written by hand.
-   ———————————————————————————————————————————————— */
+/* Hritik Datta — a quiet page. Paper, ink, no chrome. */
 
 :root {
-  --paper: #fbfaf7;
-  --ink: #1a1917;
-  --muted: #6e6a63;
-  --faint: #a5a099;
-  --line: #e5e1d8;
-  --accent: #b4540a;
-  --accent-soft: #f5e9dd;
-  --card: #ffffff;
-  --max: 44rem;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --paper: #171614;
-    --ink: #ece9e2;
-    --muted: #a39e94;
-    --faint: #6e6a63;
-    --line: #2c2a26;
-    --accent: #e08542;
-    --accent-soft: #2a211a;
-    --card: #1e1c19;
-  }
+  --paper: #f6f1dc;
+  --ink: #221f18;
+  --muted: #6b6558;
+  --faint: #9a9384;
+  --line: #ddd6c4;
+  --accent: #8a4b1f;
+  --max: 38rem;
 }
 
 * { box-sizing: border-box; }
@@ -36,319 +18,234 @@ body {
   margin: 0;
   background: var(--paper);
   color: var(--ink);
-  font-family: "Source Serif 4", Georgia, serif;
-  font-size: 1.125rem;
-  line-height: 1.72;
+  font-family: "Iowan Old Style", "Palatino Linotype", Palatino, "Times New Roman", serif;
+  font-size: 1.0625rem;
+  line-height: 1.7;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
 }
 
-::selection { background: var(--accent); color: var(--paper); }
+::selection { background: var(--ink); color: var(--paper); }
 
 a {
   color: inherit;
   text-decoration: underline;
-  text-decoration-color: var(--faint);
+  text-decoration-color: var(--line);
   text-decoration-thickness: 1px;
   text-underline-offset: 3px;
-  transition: text-decoration-color 120ms ease, color 120ms ease;
 }
 a:hover { color: var(--accent); text-decoration-color: var(--accent); }
-
-strong { font-weight: 600; }
-
-/* ———— masthead ———— */
 
 .masthead {
   max-width: var(--max);
   margin: 0 auto;
-  padding: 2.2rem 1.4rem 0;
+  padding: 2.4rem 1.4rem 1.2rem;
   display: flex;
   justify-content: space-between;
   align-items: baseline;
   gap: 1rem;
   flex-wrap: wrap;
+  border-bottom: 1px solid var(--ink);
 }
 
 .wordmark {
-  font-family: "Fraunces", Georgia, serif;
-  font-weight: 640;
   font-size: 1.05rem;
   letter-spacing: 0.01em;
   text-decoration: none;
+  font-weight: 600;
 }
 .wordmark:hover { color: var(--ink); }
 
 .menu {
   display: flex;
-  gap: 1.1rem;
-  font-family: "JetBrains Mono", monospace;
-  font-size: 0.72rem;
-  letter-spacing: 0.06em;
+  gap: 1.15rem;
+  font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+  font-size: 0.7rem;
+  letter-spacing: 0.08em;
   text-transform: uppercase;
 }
 .menu a { text-decoration: none; color: var(--muted); }
-.menu a:hover { color: var(--accent); }
-
-/* ———— layout ———— */
+.menu a:hover { color: var(--ink); }
 
 main {
   max-width: var(--max);
   margin: 0 auto;
-  padding: 0 1.4rem 4rem;
+  padding: 0 1.4rem 4.5rem;
 }
 
 .section {
   border-top: 1px solid var(--line);
-  margin-top: 4.2rem;
-  padding-top: 2.6rem;
+  margin-top: 3.4rem;
+  padding-top: 2.2rem;
 }
 
 h2 {
-  font-family: "JetBrains Mono", monospace;
-  font-size: 0.78rem;
+  font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+  font-size: 0.7rem;
   font-weight: 500;
-  letter-spacing: 0.14em;
+  letter-spacing: 0.16em;
   text-transform: uppercase;
-  margin: 0 0 1.8rem;
+  margin: 0 0 1.5rem;
   display: flex;
   align-items: baseline;
-  gap: 0.9rem;
+  gap: 0.85rem;
 }
-h2 .mark { color: var(--accent); }
+h2 .mark { color: var(--ink); }
 h2 .asof {
   color: var(--faint);
-  letter-spacing: 0.06em;
+  letter-spacing: 0.04em;
   text-transform: none;
-  font-size: 0.72rem;
+  font-size: 0.7rem;
 }
 
-/* ———— hero ———— */
-
-.hero { padding-top: 4.6rem; }
+.hero { padding-top: 3.4rem; }
 
 .kicker {
-  font-family: "JetBrains Mono", monospace;
-  font-size: 0.72rem;
+  font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+  font-size: 0.7rem;
   letter-spacing: 0.14em;
   text-transform: uppercase;
   color: var(--muted);
-  margin: 0 0 1.6rem;
+  margin: 0 0 1.4rem;
 }
 
 .hero h1 {
-  font-family: "Fraunces", Georgia, serif;
-  font-weight: 560;
-  font-size: clamp(1.7rem, 4.6vw, 2.5rem);
-  line-height: 1.28;
-  letter-spacing: -0.012em;
-  margin: 0 0 1.9rem;
+  font-weight: 500;
+  font-size: clamp(1.45rem, 3.8vw, 2.05rem);
+  line-height: 1.32;
+  letter-spacing: -0.015em;
+  margin: 0 0 1.6rem;
   text-wrap: balance;
 }
-.hero h1 em {
-  font-style: italic;
-  color: var(--accent);
-}
 
-.hero-copy p { margin: 0 0 1.1rem; max-width: 40rem; }
-.hero-close {
-  font-family: "Fraunces", Georgia, serif;
-  font-style: italic;
-  color: var(--muted);
-}
-
-.live-strip {
-  margin-top: 2.2rem;
-  font-family: "JetBrains Mono", monospace;
-  font-size: 0.78rem;
-  color: var(--muted);
-  background: var(--accent-soft);
-  border: 1px solid var(--line);
-  border-radius: 999px;
-  padding: 0.55rem 1rem;
-  display: inline-flex;
-  align-items: center;
-  gap: 0.6rem;
-  max-width: 100%;
-}
-.live-strip a { color: var(--accent); }
-.live-dot {
-  width: 7px; height: 7px; border-radius: 50%;
-  background: var(--accent);
-  flex: none;
-  animation: pulse 2.4s ease-in-out infinite;
-}
-@keyframes pulse { 0%,100% { opacity: 1 } 50% { opacity: 0.35 } }
-
-/* ———— now ———— */
+.hero-copy p { margin: 0 0 1rem; }
 
 .now-list {
   list-style: none;
-  margin: 0; padding: 0;
+  margin: 0;
+  padding: 0;
 }
 .now-list li {
-  padding: 0.85rem 0;
-  border-bottom: 1px dashed var(--line);
-  max-width: 40rem;
+  padding: 0.75rem 0;
+  border-bottom: 1px solid var(--line);
 }
 .now-list li:last-child { border-bottom: none; }
 
-/* ———— work ———— */
-
 .role {
   display: grid;
-  grid-template-columns: 11rem 1fr;
-  gap: 1.6rem;
-  padding: 1.9rem 0;
-  border-bottom: 1px dashed var(--line);
+  grid-template-columns: 10.5rem 1fr;
+  gap: 1.5rem;
+  padding: 1.7rem 0;
+  border-bottom: 1px solid var(--line);
 }
 .role:last-child { border-bottom: none; }
 
 .role-meta h3 {
-  font-family: "Fraunces", Georgia, serif;
-  font-weight: 640;
-  font-size: 1.25rem;
-  margin: 0 0 0.3rem;
+  font-weight: 600;
+  font-size: 1.15rem;
+  margin: 0 0 0.25rem;
 }
-.role-title { margin: 0 0 0.35rem; font-size: 0.92rem; color: var(--muted); line-height: 1.45; }
+.role-title { margin: 0 0 0.3rem; font-size: 0.92rem; color: var(--muted); line-height: 1.4; }
 .role-dates {
   margin: 0;
-  font-family: "JetBrains Mono", monospace;
-  font-size: 0.72rem;
+  font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+  font-size: 0.68rem;
   color: var(--faint);
   letter-spacing: 0.04em;
 }
-
-.role-body p { margin: 0 0 0.9rem; }
-.role-body ul { margin: 0; padding-left: 1.1rem; }
-.role-body li { margin-bottom: 0.7rem; }
-.role-body li::marker { color: var(--accent); }
-
-/* ———— building ———— */
-
-.section-lede { max-width: 40rem; margin: 0 0 2rem; }
-
-.trilogy {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 0.9rem;
-  margin-bottom: 1.8rem;
-}
-
-.tri-card {
-  display: flex;
-  flex-direction: column;
-  gap: 0.45rem;
-  background: var(--card);
-  border: 1px solid var(--line);
-  border-radius: 10px;
-  padding: 1.15rem 1.15rem 1.05rem;
-  text-decoration: none;
-  transition: border-color 140ms ease, transform 140ms ease;
-}
-.tri-card:hover {
-  border-color: var(--accent);
-  transform: translateY(-2px);
-  color: inherit;
-}
-
-.tri-step {
-  font-family: "JetBrains Mono", monospace;
-  font-size: 0.66rem;
-  letter-spacing: 0.12em;
+.ir {
+  margin: 0.7rem 0 0;
+  font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+  font-size: 0.68rem;
+  letter-spacing: 0.1em;
   text-transform: uppercase;
   color: var(--faint);
 }
-.tri-name {
-  font-family: "Fraunces", Georgia, serif;
-  font-weight: 640;
-  font-size: 1.3rem;
-}
-.tri-desc { font-size: 0.9rem; line-height: 1.55; color: var(--muted); }
-.tri-cta {
-  margin-top: auto;
-  padding-top: 0.5rem;
-  font-family: "JetBrains Mono", monospace;
-  font-size: 0.72rem;
-  color: var(--accent);
-}
 
-.also { max-width: 40rem; color: var(--muted); margin: 0; }
+.role-body p { margin: 0 0 0.85rem; }
+.role-body ul { margin: 0; padding-left: 1.1rem; }
+.role-body li { margin-bottom: 0.65rem; }
+.role-body li::marker { color: var(--faint); }
 
-/* ———— changelog ———— */
+.section-lede { margin: 0 0 1.4rem; color: var(--muted); }
+
+.notes-list {
+  list-style: none;
+  margin: 0 0 1.2rem;
+  padding: 0;
+}
+.notes-list li {
+  display: grid;
+  grid-template-columns: 6.2rem 1fr;
+  gap: 0.9rem;
+  padding: 0.55rem 0;
+  border-bottom: 1px solid var(--line);
+  align-items: baseline;
+}
+.notes-list li:last-child { border-bottom: none; }
+.notes-list a {
+  font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+  font-size: 0.82rem;
+  text-decoration: none;
+}
+.notes-list span { color: var(--muted); font-size: 0.95rem; }
+
+.also { color: var(--muted); margin: 0; }
 
 .log { margin: 0; }
 .log-row {
   display: grid;
-  grid-template-columns: 8.5rem 1fr;
-  gap: 1.2rem;
-  padding: 0.8rem 0;
-  border-bottom: 1px dashed var(--line);
+  grid-template-columns: 7.5rem 1fr;
+  gap: 1.1rem;
+  padding: 0.7rem 0;
+  border-bottom: 1px solid var(--line);
 }
 .log-row:last-child { border-bottom: none; }
 .log dt {
-  font-family: "JetBrains Mono", monospace;
-  font-size: 0.74rem;
+  font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+  font-size: 0.7rem;
   color: var(--faint);
   letter-spacing: 0.04em;
-  padding-top: 0.3rem;
+  padding-top: 0.25rem;
 }
 .log dd { margin: 0; }
 
-.log-note {
-  margin-top: 1.6rem;
-  font-family: "Fraunces", Georgia, serif;
-  font-style: italic;
-  color: var(--muted);
-  max-width: 38rem;
-}
-
-/* ———— contact ———— */
-
-.contact-lede { max-width: 38rem; margin: 0 0 1.6rem; }
+.contact-lede { margin: 0 0 1.4rem; }
 
 .contact-email a {
-  font-family: "Fraunces", Georgia, serif;
-  font-size: clamp(1.25rem, 3.4vw, 1.8rem);
-  font-weight: 560;
+  font-size: clamp(1.15rem, 3vw, 1.55rem);
   text-decoration-color: var(--accent);
 }
 
 .contact-links {
-  font-family: "JetBrains Mono", monospace;
-  font-size: 0.78rem;
+  font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+  font-size: 0.74rem;
   letter-spacing: 0.05em;
   color: var(--faint);
   display: flex;
-  gap: 0.7rem;
+  gap: 0.65rem;
 }
 
-/* ———— footer ———— */
-
 footer {
-  border-top: 1px solid var(--line);
-  margin-top: 1rem;
+  border-top: 1px solid var(--ink);
 }
 footer p {
   max-width: var(--max);
   margin: 0 auto;
-  padding: 1.6rem 1.4rem 2.4rem;
-  font-family: "JetBrains Mono", monospace;
-  font-size: 0.7rem;
+  padding: 1.3rem 1.4rem 2.2rem;
+  font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+  font-size: 0.68rem;
   color: var(--faint);
   letter-spacing: 0.04em;
 }
 
-/* ———— small screens ———— */
-
 @media (max-width: 720px) {
-  .hero { padding-top: 3rem; }
-  .role, .log-row { grid-template-columns: 1fr; gap: 0.5rem; }
-  .trilogy { grid-template-columns: 1fr; }
-  .menu { gap: 0.85rem; }
+  .hero { padding-top: 2.4rem; }
+  .role, .log-row, .notes-list li { grid-template-columns: 1fr; gap: 0.35rem; }
+  .menu { gap: 0.8rem; }
 }
 
 @media print {
-  .live-strip, .menu { display: none; }
-  body { font-size: 11pt; }
+  .menu { display: none; }
+  body { font-size: 11pt; background: white; }
 }

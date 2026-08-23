@@ -1,23 +1,13 @@
-# Hritik Datta — Portfolio
+# hritikd.github.io
 
-Personal landing page. Static site built with HTML, CSS, and vanilla JavaScript. Deployed on Vercel.
+Personal site. A static page — HTML, CSS, a few lines of JavaScript. No template, no build step.
 
-## Local preview
+[hritikd.github.io](https://hritikd.github.io)
+
+## Preview
 
 ```bash
-# any static server works — e.g. with Python:
 python3 -m http.server 5173
-# then open http://localhost:5173
 ```
 
-## Deploy
-
-```bash
-vercel --prod
-```
-
-## Stack
-
-- HTML, CSS, vanilla JS — no build step
-- Inter + JetBrains Mono via Google Fonts
-- Hosted on Vercel
+Then open `http://localhost:5173`.
